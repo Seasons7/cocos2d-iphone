@@ -1006,6 +1006,8 @@
 		A0EFA880169CDFA4006D1B22 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B920D5A79C200DBA0E3 /* OpenGLES.framework */; };
 		A0EFA881169CDFA4006D1B22 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */; };
 		A0EFA882169CDFA4006D1B22 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 503092B210447296005F7AFC /* libz.dylib */; };
+		AD2A1FF516BD87250092BF06 /* SublimeClient.c in Sources */ = {isa = PBXBuildFile; fileRef = AD2A1FF316BD87250092BF06 /* SublimeClient.c */; };
+		AD2A1FF616BD87250092BF06 /* SublimeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = AD2A1FF416BD87250092BF06 /* SublimeClient.h */; };
 		E0112F53120CB406006667F8 /* CCTransitionPageTurn.h in Headers */ = {isa = PBXBuildFile; fileRef = E0112F4F120CB406006667F8 /* CCTransitionPageTurn.h */; };
 		E0112F54120CB406006667F8 /* CCTransitionPageTurn.m in Sources */ = {isa = PBXBuildFile; fileRef = E0112F50120CB406006667F8 /* CCTransitionPageTurn.m */; };
 		E01E6D8C121F130E001A484F /* CCLabelBMFont.h in Headers */ = {isa = PBXBuildFile; fileRef = E01E6D8A121F130E001A484F /* CCLabelBMFont.h */; };
@@ -1760,6 +1762,8 @@
 		A0EFA473169C9996006D1B22 /* WeakPtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakPtr.h; sourceTree = "<group>"; };
 		A0EFA7AC169CDF9C006D1B22 /* libcocos2d_box2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d_box2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EFA886169CDFA4006D1B22 /* libcocos2d_chipmunk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d_chipmunk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2A1FF316BD87250092BF06 /* SublimeClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SublimeClient.c; sourceTree = "<group>"; };
+		AD2A1FF416BD87250092BF06 /* SublimeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SublimeClient.h; sourceTree = "<group>"; };
 		E0112F4F120CB406006667F8 /* CCTransitionPageTurn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTransitionPageTurn.h; sourceTree = "<group>"; };
 		E0112F50120CB406006667F8 /* CCTransitionPageTurn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTransitionPageTurn.m; sourceTree = "<group>"; };
 		E01E6D8A121F130E001A484F /* CCLabelBMFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CCLabelBMFont.h; sourceTree = "<group>"; };
@@ -2926,6 +2930,7 @@
 		A0E469B1168269E700B929F6 /* jsbindings_support */ = {
 			isa = PBXGroup;
 			children = (
+				AD2A1FF216BD87250092BF06 /* SublimeTextIntegration */,
 				A0E469B2168269E700B929F6 /* LocalStorage */,
 				A0E469B5168269E700B929F6 /* README.md */,
 			);
@@ -3046,6 +3051,15 @@
 				0529445A11098D6F00E500F3 /* CCProfiling.m */,
 			);
 			name = Profiling;
+			sourceTree = "<group>";
+		};
+		AD2A1FF216BD87250092BF06 /* SublimeTextIntegration */ = {
+			isa = PBXGroup;
+			children = (
+				AD2A1FF316BD87250092BF06 /* SublimeClient.c */,
+				AD2A1FF416BD87250092BF06 /* SublimeClient.h */,
+			);
+			path = SublimeTextIntegration;
 			sourceTree = "<group>";
 		};
 		E0BC7DA11342CE83001B4DCC /* Shaders */ = {
@@ -3483,6 +3497,7 @@
 				A0EFA4AC169C9996006D1B22 /* TypeTraits.h in Headers */,
 				A0EFA4AD169C9996006D1B22 /* Util.h in Headers */,
 				A0EFA4AE169C9996006D1B22 /* WeakPtr.h in Headers */,
+				AD2A1FF616BD87250092BF06 /* SublimeClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4345,6 +4360,7 @@
 				A06BF846168105350018A802 /* js_bindings_system_functions.mm in Sources */,
 				A0E469B6168269E700B929F6 /* LocalStorage.c in Sources */,
 				A025222F16965CC80087E514 /* js_bindings_dbg.mm in Sources */,
+				AD2A1FF516BD87250092BF06 /* SublimeClient.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4881,6 +4897,7 @@
 					DEBUG,
 					"COCOS2D_DEBUG=1",
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"CC_ENABLE_SUBLIME_INTEGRATION=1",
 				);
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -4908,6 +4925,7 @@
 					NS_BLOCK_ASSERTIONS,
 					NDEBUG,
 					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					"CC_ENABLE_SUBLIME_INTEGRATION=1",
 				);
 				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;

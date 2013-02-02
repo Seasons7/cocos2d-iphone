@@ -9,7 +9,7 @@
 	url = git://github.com/ricardoquesada/jrswizzle.git
 [submodule "external/JavaScript/jsbindings_support"]
 	path = external/JavaScript/jsbindings_support
-	url = git://github.com/ricardoquesada/jsbindings_support.git
+	url = https://Seasons7@github.com/Seasons7/jsbindings_support.git
 [submodule "tests/cocos2d-js-tests"]
 	path = tests/cocos2d-js-tests
 	url = git://github.com/cocos2d/cocos2d-js-tests.git
