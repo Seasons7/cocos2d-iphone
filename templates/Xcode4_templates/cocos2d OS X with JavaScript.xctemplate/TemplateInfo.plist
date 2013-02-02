@@ -94,6 +94,7 @@
 					<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 					<array>
 						<string>CC_ENABLE_CHIPMUNK_INTEGRATION=1</string>
+						<string>CC_ENABLE_SUBLIME_INTEGRATION=1</string>
 						<string>DEBUG</string>
 						<string>COCOS2D_DEBUG=1</string>
 						<string>CC_DIRECTOR_MAC_THREAD=2</string>
@@ -105,6 +106,7 @@
 					<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 					<array>
 						<string>CC_ENABLE_CHIPMUNK_INTEGRATION=1</string>
+						<string>CC_ENABLE_SUBLIME_INTEGRATION=1</string>
 						<string>NDEBUG</string>
 						<string>NS_BLOCK_ASSERTIONS=1</string>
 						<string>CC_DIRECTOR_MAC_THREAD=2</string>

@@ -1317,7 +1317,7 @@
 			<key>Path</key>
 			<string>libs/jsbindings_support/LocalStorage/LocalStorage.c</string>
 		</dict>
-		<key>libs/jsbindings_support/LocalStorage/LocalStorage.c - 2</key>
+		<key>libs/jsbindings_support/SublimeTextIntegration/SublimeClient.c</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -1341,16 +1341,16 @@
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
-		<key>libs/jsbindings_support/LocalStorage/LocalStorage.h - 2</key>
+		<key>libs/jsbindings_support/SublimeTextIntegration/SublimeClient.h</key>
 		<dict>
 			<key>Group</key>
 			<array>
 				<string>libs</string>
 				<string>jsbindings_support</string>
-				<string>SublimeTExtIntegration</string>
+				<string>SublimeTextIntegration</string>
 			</array>
 			<key>Path</key>
-			<string>libs/jsbindings_support/SublimeTExtIntegration/SublimeClient.h</string>
+			<string>libs/jsbindings_support/SublimeTextIntegration/SublimeClient.h</string>
 			<key>TargetIndices</key>
 			<array/>
 		</dict>
@@ -1480,6 +1480,8 @@
 		<string>libs/jsbindings/src/manual/js_bindings_system_registration.mm</string>
 		<string>libs/jsbindings_support/LocalStorage/LocalStorage.c</string>
 		<string>libs/jsbindings_support/LocalStorage/LocalStorage.h</string>
+		<string>libs/jsbindings_support/SublimeTextIntegration/SublimeClient.h</string>
+		<string>libs/jsbindings_support/SublimeTextIntegration/SublimeClient.c</string>
 		<string>libs/jsbindings_support/README.md</string>
 		<string>libs/LICENSE_jsbindings.txt</string>
 	</array>
